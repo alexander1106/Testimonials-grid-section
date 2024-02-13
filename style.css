@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 12px;
+}
+
+.main-contenedor{
+    width: 74vw;
+    display: flex;
+    padding: 20px;
+}
+
+.primera-parte{
+    width: 75vw; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.segunda-parte{
+    width:25vw;
+    height: 100%;
+}
+ .main-contenedor-item{
+    background-color: white;
+}
+.main-contenedor-item{
+    border: 0 ;
+    overflow: hidden;
+    box-shadow: 0.2px 0.3px  2px rgb(0, 0, 0);
+    color: rgb(255, 255, 254);
+    padding: 20px 20px 20px 20px;
+    margin: 10px;
+    border-radius: 14px ;
+    position: relative;
+    
+    
+}
+.primera-parte .main-contenedor-item:first-child{
+    grid-column: 1/3; 
+    background-color: hsl(263, 55%, 52%);
+}
+.segunda-parte .main-contenedor-item{
+    color: black;
+    padding-bottom: 33px;
+}
+.main-contenedor-item:nth-child(4){
+    background-color:   hsl(219, 29%, 14%);
+    grid-column: 2/4;
+    color: white;
+
+}
+.item-contenedor-nombre{
+    position: relative;
+    z-index: 9;
+}
+.main-contenedor-item:nth-child(3){
+    grid-row: span 2;
+    color: rgb(0, 0, 0);
+    line-height: 17px;
+}
+.svg{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin-right: 80px;
+    
+}
+
+.item-contenedor-text{
+    display: flex;
+}
+.item-contenedor-nombre p:first-child{
+    font-weight: 600;
+}
+.main-contenedor-item:nth-child(2){
+    background-color:   hsl(217, 19%, 35%);
+}
+
+img{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    margin-right: 13px;
+    border:0.8px solid ;
+}
+.item-first-text{
+    margin: 12px 0px 12px 0px;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.gray{
+    font-size: 12.4px ;    
+    opacity: 50%;
+
+}
+@media (max-width:475px){
+    
+    .main-contenedor{
+        display: block;
+        width: 85vw;
+        height: 100vh;
+        padding-top: 40px;
+    }
+
+    .main-contenedor-item{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .svg{
+        margin-right: 40px;
+
+    }
+    .primera-parte{
+        display: block;
+    }
+    .segunda-parte{
+        display: block;
+    }
+    .segunda-parte .main-contenedor-item{
+        width: 70vw}
+
+}
+
+
